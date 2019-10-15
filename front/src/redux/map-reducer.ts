@@ -1,5 +1,5 @@
 import {IMapState} from "../types/mapStateTypes";
-import {actionMap,SET_MAP_CORDS_SUCCESS} from "../types/map-actions";
+import {cordsActionTypes, SET_MAP_CORDS_SUCCESS} from "../types/map-actions";
 
 
 const initialState: IMapState = {
@@ -14,7 +14,7 @@ const initialState: IMapState = {
 
 };
 
-const mapReducer = (state = initialState, action: actionMap) => {
+const mapReducer = (state = initialState, action: cordsActionTypes) => {
     switch (action.type) {
         case SET_MAP_CORDS_SUCCESS:
             return {
@@ -27,12 +27,8 @@ const mapReducer = (state = initialState, action: actionMap) => {
 };
 
 
-export const setCoordsSuccess = (coords:any) => ({
+export const setCoordsSuccess = (coords:cordsActionTypes) => ({
     type:SET_MAP_CORDS_SUCCESS, payload:coords
 })
-
-// export const setDragOffsetSuccess = (coords:any) => ({
-//     type:SET_DRAG_OFFSET_SUCCESS, payload:coords
-// })
 
 export default mapReducer;

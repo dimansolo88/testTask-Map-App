@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-// import Map from "./components/Map";
 import Login from "./components/Login";
 import {Switch, Route} from 'react-router-dom';
 import MapData from "./components/MapData";
