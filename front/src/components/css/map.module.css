@@ -1,0 +1,7 @@
+.mapWrapper {
+     display: flex;
+     justify-Content: space-between;
+     margin-top: 20px;
+     width: 100%;
+     height: 100vh;
+ }
