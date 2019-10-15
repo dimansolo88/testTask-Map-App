@@ -30,7 +30,7 @@ const  Header = () => {
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
-                        Map App
+                        Map App  logins: test, test2
                     </Typography>
                 </Toolbar>
             </AppBar>

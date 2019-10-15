@@ -3,6 +3,7 @@ import {Field, reduxForm} from "redux-form";
 import Buttons from "./commone/Button";
 import Input from "./commone/Input";
 import {createStyles, makeStyles, Theme} from "@material-ui/core";
+import {required} from "../validation/validationForm";
 
 
 const LoginForm: React.FC<any> = ({handleSubmit}) => {
@@ -25,7 +26,7 @@ const LoginForm: React.FC<any> = ({handleSubmit}) => {
             style={{display: "flex" , flexDirection: "column", marginTop: "200px"}}>
                 <div>
                     <Field component={Input} name={"login"}
-                            type="text" placeholder={"enter yor login"}/>
+                            type="text" placeholder={"enter yor login"} validate={required}/>
                 </div>
 
                 <div>

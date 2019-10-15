@@ -1,4 +1,4 @@
-import {SET_LOGIN_SUCCESS, authActionTypes, IAddLoginAction} from "../types/auth-actions";
+import {SET_LOGIN_SUCCESS,IAddLoginAction} from "../types/auth-actions";
 import {IAuthState} from "../types/authStateTypes";
 
 
